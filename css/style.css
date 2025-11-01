@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafc;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header-logo .logo {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color:white;
+    font-size: large;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav a:hover {
+    color: rgba(245, 245, 245, 0.727);
+    transform: scale(1.1);
+}
+
+.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-register {
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: large;
+}
+
+.btn-login {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-login:hover {
+    background: white;
+    color: black;
+}
+
+.btn-register {
+    background: #182848;
+    color: white;
+    border: 1px solid #182848;
+}
+
+.btn-register:hover {
+    background: #223966;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background: white;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.footer {
+    background-color: #182848;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #182848;
+        flex-direction: column;
+        width: 220px;
+        text-align: right;
+        display: none;
+        padding: 15px;
+        border-radius: 0 0 0 10px;
+        gap: 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 10px;
+    }
+}
+
+.menu-toggle-checkbox {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #182848;
+    flex-direction: column;
+    width: 220px;
+    text-align: right;
+    padding: 15px;
+    border-radius: 0 0 0 10px;
+    gap: 10px;
+    display: none; /* приховано за замовчуванням */
+  }
+
+  /* Коли чекбокс активний, показати меню */
+  .menu-toggle-checkbox:checked + .menu-toggle + .nav {
+    display: flex;
+  }
+
+  /* Анімація бургеру при активному стані */
+  .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    background: white;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+}
