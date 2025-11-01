@@ -15,6 +15,9 @@ body {
     background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
     color: white;
     padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header .container {
@@ -87,7 +90,7 @@ body {
 
 .btn-login:hover {
     background: white;
-    color: black;
+    color: black !important;
 }
 
 .btn-register {
@@ -98,7 +101,7 @@ body {
 
 .btn-register:hover {
     background: #223966;
-    color: white;
+    color: white !important;
 }
 
 .menu-toggle {
