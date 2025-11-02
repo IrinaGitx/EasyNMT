@@ -1,0 +1,23 @@
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+.checkbox input {
+    margin-right: 6px;
+}
+
+.forgot {
+    font-size: 0.9rem;
+    color: #4b6cb7;
+    text-decoration: none;
+    font-weight: 500;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
