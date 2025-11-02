@@ -1,3 +1,4 @@
+/* Шапка сайту */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -119,7 +120,193 @@ body {
     border-radius: 2px;
     transition: 0.3s;
 }
+/* основний контент (селектор головний) */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 50px 8%;
+    background: #e8edff;
+    overflow: hidden;
+}
 
+.home .content {
+    max-width: 600px;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #182848;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.home .content p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.home .content .btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+}
+
+.home .content .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(315deg, #5c7ad9 0%, #1f3b8a 74%);
+}
+
+.home-img .img-png {
+    width: 600px;
+}
+
+/* Головний контект (про курс) */
+.why-us {
+    text-align: center;
+}
+
+.why-us .container-about {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why-us h2 {
+    color: #182848;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.why-us p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.stat-card {
+    background-color: #f1f3f5;
+    border-radius: 14px;
+    padding: 25px 20px;
+    width: 230px;
+    height: 200px;
+    flex: 0 0 auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-card h3 {
+    color: #182848;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.stat-card p {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Головний контект (наші предмети) */
+.course {
+    text-align: center;
+}
+
+.container-course {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.course h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 30px 0 px 0;
+    color: #182848;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subject-card {
+    background-color: #f1f3f5;
+    border-radius: 14px;
+    padding: 25px 20px;
+    width: 220px;
+    height: 220px;
+    flex: 0 0 auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subject-card h3 {
+    color: #182848;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.subject-card p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.btn-subject {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+    color: white;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-subject:hover {
+    transform: scale(1.03);
+    background: linear-gradient(315deg, #5c7ad9 0%, #1f3b8a 74%);
+}
+
+
+
+
+
+
+
+
+
+/* Підвал */
 .footer {
     background-color: #182848;
     color: white;
@@ -186,7 +373,7 @@ body {
     padding: 15px;
     border-radius: 0 0 0 10px;
     gap: 10px;
-    display: none; /* приховано за замовчуванням */
+    display: none;
   }
 
   /* Коли чекбокс активний, показати меню */
@@ -226,4 +413,43 @@ body {
     align-items: flex-end;
     margin-top: 10px;
   }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .home .content h3 {
+        font-size: 2rem;
+    }
+
+    .home .content p {
+        font-size: 1rem;
+    }
+
+    .home-img {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .home-img .img-png {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 90%;
+        height: auto;
+    }
 }
