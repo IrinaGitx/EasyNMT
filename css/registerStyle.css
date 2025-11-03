@@ -2,11 +2,32 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
     margin: 0;
+    padding: 0; /* додано */
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
+
+* {
+    box-sizing: inherit;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.8rem;
+    color: #182848;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-arrow:hover {
+    color: #4b6cb7;
+}
+
 
 .form-container {
     width: 100%;
@@ -60,7 +81,7 @@ h1 {
 }
 
 .btn {
-    width: 432px;
+    width: 100%; /* виправлено */
     padding: 14px;
     font-size: 1rem;
     background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
@@ -89,4 +110,39 @@ h1 {
 
 .login-text a:hover {
     text-decoration: underline;
+}
+
+/* --- Адаптивність --- */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+        height: auto;
+    }
+
+    .form-container {
+        padding: 30px 25px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .input-group input {
+        font-size: 0.95rem;
+        padding: 12px 14px;
+    }
+
+    .btn {
+        border-radius: 14px;
+        font-size: 0.95rem;
+    }
+
+    .checkbox {
+        font-size: 0.85rem;
+    }
+
+    .login-text {
+        font-size: 0.9rem;
+    }
 }
