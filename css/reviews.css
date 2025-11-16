@@ -1,14 +1,15 @@
 /* 🔹 Секція відгуків */
 .reviews-section {
-  padding: 60px 0; /* Відступи зверху і знизу */
-  text-align: center; /* Центрування заголовків */
+  text-align: center;
+  padding: 12px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* 🔹 Заголовки */
 .section-title {
   font-size: 2.2em;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .section-subtitle {
@@ -37,11 +38,6 @@
   text-align: left;
 }
 
-.review-card:hover {
-  transform: translateY(-5px); /* Підйом при наведенні */
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
 /* 🔹 Фото і текст */
 .review-photo {
   width: 80px;
@@ -66,7 +62,7 @@
 
 /* 🔹 Форма додавання */
 .add-review {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .review-form {
@@ -86,7 +82,7 @@
 }
 
 .btn-submit {
-  background-color: #3b82f6;
+  background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
   color: white;
   border: none;
   padding: 10px 25px;
@@ -96,5 +92,6 @@
 }
 
 .btn-submit:hover {
-  background-color: #2563eb;
+  background: linear-gradient(315deg, #5c7ad9 0%, #1f3b8a 74%);
+  transform: scale(1.06);
 }
