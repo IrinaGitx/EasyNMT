@@ -2,7 +2,7 @@
   padding: 10px 0;
   background-color: #f9fbfd;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-title {
@@ -70,10 +70,25 @@
   padding: 0 10px;
 }
 
+.reviews-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.reviews-link p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
 .btn-reviews {
   display: inline-block;
+  margin-top: 10px;
   padding: 10px 30px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border-radius: 30px;
   background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
   color: white;
