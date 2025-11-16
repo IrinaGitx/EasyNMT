@@ -2,6 +2,7 @@
   padding: 10px 0;
   background-color: #f9fbfd;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-title {
@@ -69,6 +70,22 @@
   padding: 0 10px;
 }
 
+.btn-reviews {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-reviews:hover {
+  transform: scale(1.05);
+  background: linear-gradient(315deg, #5c7ad9 0%, #1f3b8a 74%);
+}
 
 @media (max-width: 600px) {
   .teachers-grid {
