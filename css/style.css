@@ -1,4 +1,3 @@
-/* Шапка сайту */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -120,7 +119,6 @@ body {
     border-radius: 2px;
     transition: 0.3s;
 }
-/* основний контент (селектор головний) */
 .home {
     display: flex;
     align-items: center;
@@ -170,7 +168,6 @@ body {
     width: 600px;
 }
 
-/* Головний контект (про курс) */
 .why-us {
     text-align: center;
 }
@@ -227,7 +224,6 @@ body {
     line-height: 1.5;
 }
 
-/* Головний контект (наші предмети) */
 .course {
     text-align: center;
 }
@@ -306,7 +302,6 @@ body {
 
 
 
-/* Підвал */
 .footer {
     background-color: #182848;
     color: white;
@@ -376,12 +371,10 @@ body {
     display: none;
   }
 
-  /* Коли чекбокс активний, показати меню */
   .menu-toggle-checkbox:checked + .menu-toggle + .nav {
     display: flex;
   }
 
-  /* Анімація бургеру при активному стані */
   .menu-toggle-checkbox:checked + .menu-toggle span:nth-child(1) {
     transform: rotate(45deg) translateY(8px);
   }

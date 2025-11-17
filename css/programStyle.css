@@ -1,0 +1,142 @@
+.program-intro {
+    padding: 20px 0 20px; 
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.program-intro h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.program-description {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.program-components {
+    padding: 30px 0; 
+}
+
+.program-components .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.component-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #182848; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #182848;
+}
+
+.card-header .icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.purpose {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+}
+
+.content-desc {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.examples-list {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.examples-list li {
+    margin-bottom: 5px;
+}
+
+.note {
+    font-size: 0.9em;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-left: 3px solid #2196F3;
+    margin-bottom: 20px;
+}
+
+.component-card .btn-primary {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    font-size: 1em;
+    background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.component-card .btn-primary:hover {
+    background: linear-gradient(315deg, #5c7ad9 0%, #1f3b8a 74%);
+}
+
+@media (max-width: 768px) {
+    .program-intro {
+        padding: 15px 0 15px;
+    }
+
+    .program-intro h2 {
+        font-size: 2em;
+    }
+    
+    .program-components {
+        padding: 20px 0;
+    }
+
+    .program-components .container {
+        grid-template-columns: 1fr;
+    }
+}

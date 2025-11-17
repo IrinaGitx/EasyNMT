@@ -20,25 +20,23 @@
   font-weight: 400;
 }
 
-/* --- Сітка з 3 картками --- */
 .teachers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* три картки в ряд */
-  justify-items: center; /* центрування карток */
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto; /* центрує блок по горизонталі */
+  margin: 0 auto;
   padding: 0 20px;
 }
 
-/* --- Картка викладача --- */
 .teacher-card {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 25px;
   text-align: center;
-  width: 340px; /* ширші картки */
+  width: 340px;
 }
 
 .teacher-photo {
@@ -70,16 +68,15 @@
   padding: 0 10px;
 }
 
-/* --- Адаптація під планшети та телефони --- */
 @media (max-width: 992px) {
   .teachers-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 картки */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .teachers-grid {
-    grid-template-columns: 1fr; /* 1 картка */
+    grid-template-columns: 1fr;
   }
 
   .teacher-card {

@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
     margin: 0;
-    padding: 0; /* додано */
+    padding: 0;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ h1 {
 }
 
 .btn {
-    width: 100%; /* виправлено */
+    width: 100%;
     padding: 14px;
     font-size: 1rem;
     background: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
@@ -112,7 +112,6 @@ h1 {
     text-decoration: underline;
 }
 
-/* --- Адаптивність --- */
 @media (max-width: 600px) {
     body {
         padding: 20px;
